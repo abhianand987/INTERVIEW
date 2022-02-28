@@ -1,8 +1,9 @@
 #include <iostream>
 using namespace std;
 
-Time Complexity Analysis: The time complexity of MergeSort is O(n*Log n) in all the 3 cases (worst, average and best)
+Time Complexity Analysis: The time complexity of MergeSort is O(nlog n) in all the 3 cases (worst, average and best)
 as the mergesort always divides the array into two halves and takes linear time to merge two halves.
+T.C : O(nlogn) because at every level of recursion you are doing O(n) work and total number of levels are logn so nlogn.
 Auxialary Space Complexity : O(n) and not O(nlogn) because at any moment in RAM you will need O(n) space because in recursion
 tree the space allocated for one is deallocated and also we have recursion call stack space of log(n).
 
