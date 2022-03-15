@@ -13,8 +13,8 @@ int quickSelect(vector<int>&arr,int k){ // k smallest maal in 0(N)
         int pivot = arr[hi];
         int pi = partition(arr,pivot,lo,hi);
         if(pi == k-1) return arr[pi];
-        else if(pi > k-1) hi = mid-1; //search in left
-        else if(pi < k-1) lo = mid+1; //search in right
+        else if(pi > k-1) hi = pi-1; //search in left
+        else if(pi < k-1) lo = pi+1; //search in right
     }
      
 }
